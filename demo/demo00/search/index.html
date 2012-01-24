@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter River Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.8.14.custom.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css" />
+
+	
+	<style type="text/css" title="currentStyle">
+		@import "css/demo_page.css";
+		@import "css/demo_table.css";
+	</style>
+
+    <!-- Load JS libraries -->
+    <script type="text/javascript" language="javascript" src="lib/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="lib/protovis-r3.2.js"></script>
+    <script type="text/javascript" language="javascript" src="lib/donut.js"></script>
+    <script type="text/javascript" language="javascript" src="lib/timeline.js"></script>
+	<script type="text/javascript" language="javascript" src="lib/jquery.jqGrid.min.js"></script>
+	<script type="text/javascript" language="javascript" src="lib/jquery-ui-1.8.14.custom.min.js"></script>
+	<script type="text/javascript" language="javascript" src="lib/jshashtable-2.1.js"></script>
+	<script type="text/javascript" language="javascript" src="lib/jquery.numberformatter-1.2.2.jsmin.js"></script>
+	
+	
+    <script>
+	jQuery.support.cors = true;
+	
+	function showLoading(texte) {
+		$("#wait").text("Recherche de " + texte + " en cours").show();
+	}
+
+	function hideLoading() {
+		$("#wait").fadeOut(1000);
+	}
+
+	function compute_data(google) {
+		showLoading(google);
+		load_data(google);
+	}
+
+	var sES = "http://localhost:9299/";
+	
+	$( function() { 
+		$( "#tabs" ).tabs();
+		$( "#searchterm" ).keyup (function(event) {
+				var google = $( "#searchterm" ).val();
+				compute_data(google);
+				return true;
+			}
+		);
+		
+		// Simulate a keyup event
+		$( "#searchterm" ).trigger('keyup');
+		
+	});
+
+	// Initialisation des filtres par défaut
+	var filters = { "match_all" : { } };
+	var es_from = 0;
+	var es_size = 10;
+	
+	function addFilter(cle, valeur) {
+		// On vérifie si and existe ou non.
+		var obj = filters.match_all;
+		if (obj != null) {
+			filters = {	"and" : [ ] };
+		}
+	
+		var i = 0;
+		for ( ; i < filters.and.length ; i++ ) {
+			for	(code in filters.and[i].term) {
+				if (code == cle) {
+					filters.and.splice(i, 1);
+					break;
+				}
+			}
+		}
+	
+		var chaine = '{ "term" : { "' + cle + '" : "' + valeur + '" } }';
+		filters.and.push( JSON.parse(chaine) );
+	}
+
+	function removeFilter(cle) {
+		// On vérifie si and existe ou non.
+		if (filters.and != null) {
+			var i = 0;
+			for ( ; i < filters.and.length ; i++ ) {
+				for	(code in filters.and[i].term) {
+					if (code == cle) {
+						filters.and.splice(i, 1);
+						break;
+					}
+				}
+			}
+		
+			if (filters.and.length == 0) {
+				filters = { "match_all" : { } };
+			}
+		}
+	
+	}
+	
+	var load_data = function(texte) {
+			var esCall = JSON.stringify({
+								"from" : es_from, "size" : es_size,
+								"query" : { 
+									"filtered" : {
+										"query" : {
+											"prefix" : { "_all" : texte } 
+										},
+										"filter" : filters
+									}
+								},
+
+								"facets":{
+									"text" : { "terms" : {"field" : "text"} },
+									"tweeters" : { "terms" : {"field" : "user.screen_name"} },
+									"hashtags" : { "terms" : {"field" : "hashtag.text"} },
+									"minutes" : { "date_histogram" : { "field" : "created_at", "interval" : "minute"} }
+								}
+                       }, null, 2);
+			$('#jsonin').html( "<pre>" + esCall + "</pre>" );
+
+   
+           $.ajax({   url: sES + '/twitter/_search?pretty=true'
+                     , type: 'POST'
+                     , data : esCall
+                     , dataType : 'json'
+                     , processData: false
+                     , success: function(json, statusText, xhr) {
+							hideLoading();
+                           return display_chart(json);
+                       }
+                     , error: function(xhr, message, error) {
+                           // console.error("Error while loading data from ElasticSearch", message);
+						   hideLoading();
+//                           throw(error);
+                      }
+            });
+
+			
+			
+			var oTable;
+
+			var formatNumber = function(widget, data, symbol) {
+				$( widget ).text( data );
+				if (data != 0) {
+					$( widget ).formatNumber({format:"#,###" + (symbol != null ? " " + symbol : ""), locale:"fr"});
+				}
+			}
+			
+			var facetRange = function(widget, datas, symbol) {
+				for ( i = 0 ; i < datas.length ; i++) {
+					// Nb
+					formatNumber( widget + i + "_nb", datas[i].count );
+					
+					// Min
+					formatNumber( widget + i + "_min", datas[i].min, "€" );
+					
+					// Moy
+					formatNumber( widget + i + "_moy", datas[i].mean, "€" );
+				
+					// Max
+					formatNumber( widget + i + "_max", datas[i].max, "€" );
+				}
+			}
+
+			function getValueFromMap(map, keyname, key, valuename) {
+				var retour = null;
+				for ( i = 0 ; i < map.length ; i++ ) {
+					var curkey = eval("map["+i+"]."+keyname);
+					if (curkey == key) {
+						var curvalue = eval("map["+i+"]."+valuename);
+						return curvalue;
+					}
+				}
+			}
+			
+			
+            var display_chart = function(json) {
+				// Seulement si il y a des résultats :
+				if (json.hits.total == 0) {
+					$('#chart1').text( "" );
+					$('#chart2').text( "" );
+					$('#chart_tweeters').text( "" );
+					$('#chart_hashtags').text( "" );
+					$('#jsonin').text( "" );
+					$('#jsonout').text( "" );
+					$("#talks").jqGrid('clearGridData',true);
+					$('#talkdetails').text( "" );
+				} else {
+					Donut("chart1")
+						.legend("TOP 10 Terms")
+						.data(json.facets.text.terms)
+						.facet("text")
+						.draw();
+					Donut("chart_hashtags")
+						.legend("TOP 10 Hashtags")
+						.data(json.facets.hashtags.terms)
+						.facet("hashtag.text")
+						.draw();
+					Donut("chart_tweeters")
+						.legend("TOP 10 Tweeters")
+						.data(json.facets.tweeters.terms)
+						.facet("user.screen_name")
+						.draw();
+					Timeline("chart2").data(json.facets.minutes.entries).draw();
+					
+					$('#talks').jqGrid({
+						datatype: "local", 
+						height: 250, 
+						colNames:['Date', 'Tweeter', 'Tweet', 'Score'], 
+						colModel:[ 
+							{name:'_source.created_at',index:'created_at', width:150, sortable:false},
+							{name:'_source.user.screen_name',index:'screen_name', width:150, sortable:false},
+							{name:'_source.text',index:'text', width:800, sortable:false},
+							{name:'_score',index:'_score', width:120, align:"right", sortable:false}
+						], 
+						multiselect: false, 
+						caption: "Talks",
+
+						onSelectRow: function(id){
+							$('#talkdetails').html( "<pre>" + JSON.stringify(json.hits.hits[(id-1)]._source, null, 2) + "</pre>");
+						}
+
+					});
+						
+					$("#talks").jqGrid('clearGridData',true);
+					for(var i=0;i<=json.hits.hits.length;i++) $("#talks").jqGrid('addRowData',i+1,json.hits.hits[i]); 
+					
+				}
+
+				formatNumber( '#stats_nb', json.hits.total );
+				$('#stats_nb_titre').text( ' éléments trouvés' );
+				$('#stats_took_debut').text( 'en ' );
+				formatNumber( '#stats_took', json.took, 'ms' );
+				
+				$('#jsonout').html( "<pre>" + JSON.stringify(json, null, 2) + "</pre>");
+			};
+        };
+    </script>
+</head>
+<body>
+	<form action="#">
+		<input type="text" id="searchterm" size="100" value="">
+		<span id="wait"></span>
+	</form>
+	
+	<br>
+	<div id="stats_nb" style="display:inline"></div>
+	<div id="stats_nb_titre" style="display:inline"></div>
+	<div id="stats_took_debut" style="display:inline"></div>
+	<div id="stats_took" style="display:inline"></div>
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Résultats</a></li>
+		<li><a href="#tabs-2">JSon</a></li>
+	</ul>
+	<div id="tabs-1">
+		<table width="100%">
+			<tr id="charts">
+				<td width="300"><div id="chart1"></div></td>
+				<td width="300"><div id="chart_hashtags"></div></td>
+				<td width="300"><div id="chart_tweeters"></div></td>
+				<td><div id="chart2"></div></td>
+			</tr>
+			<tr>
+				<td><div id="chart1_filter"></div></td>
+				<td><div id="chart_hashtags_filter"></div></td>
+				<td><div id="chart_tweeters_filter"></div></td>
+				<td><div id="chart2_filter"></div></td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<table><tr valign="top"><td><table id="talks"></table></td><td><div id="talkdetails"></div></td></tr></table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="tabs-2">
+		<table width="100%">
+			<tr id="json" valign="top">
+				<td width="400" bgcolor="#F0F0F0"><div id="jsonin"></div></td>
+				<td><div id="jsonout"></div></td>
+			</tr>
+		</table>
+	</div>
+</div>
+	
+		
+
+		
+	
+
+</body>
+</html>
