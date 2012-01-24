@@ -1,0 +1,14 @@
+{
+	"date" : "2008-12-02",
+	"theme" : "Soirée JBoss",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "JBoss AS 5",
+			"speakers" : [ "Sacha Labourey" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "JBoss Seam",
+			"speakers" : [ "Malik Saheb" ]
+		}}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"date" : "2009-09-15",
+	"theme" : "Soirée Qualité du logiciel",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Les frameworks open source",
+			"speakers" : [ "Romain Pelisse", "François Le Droff" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Sonar",
+			"speakers" : [ "Olivier Gaudin" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "SonarJ Community Edition",
+			"speakers" : [ "Frederic Brachfeld" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Squale",
+			"speakers" : [ "Fabrice Bellingard" ]
+		}}
+	]
+}

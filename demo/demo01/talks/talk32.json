@@ -1,0 +1,22 @@
+{
+	"date" : "2010-05-11",
+	"theme" : "Soirée Share, Build & Deploy",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "DVCS",
+			"speakers" : [ "Sebastien Douche" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Git, la gestion de configuration qui vous veut du bien",
+			"speakers" : [ "David Gageot" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Maven 3",
+			"speakers" : [ "Arnaud Héritier", "Nicolas De loof" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "DeployIt",
+			"speakers" : [ "Guillaume Bodet", "Benoit Moussaud" ]
+		}}
+	]
+}

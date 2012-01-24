@@ -1,0 +1,10 @@
+{
+	"date" : "2010-12-14",
+	"theme" : "Soirée Java avancé",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Les annotations",
+			"speakers" : [ "Olivier Croisier" ]
+		}}
+	]
+}

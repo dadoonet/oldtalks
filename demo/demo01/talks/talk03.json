@@ -1,0 +1,10 @@
+{
+	"date" : "2008-04-08",
+	"theme" : "The Box",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "The Box - Les performances Java",
+			"speakers" : [ "Kirk Pepperdine" ]
+		}}
+	]
+}

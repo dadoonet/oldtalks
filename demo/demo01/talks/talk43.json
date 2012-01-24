@@ -1,0 +1,10 @@
+{
+	"date" : "2011-05-10",
+	"theme" : "Soirée Camel et ServiceMix",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Integration with Apache Camel and ESB",
+			"speakers" : [ "Charles Moulliard" ]
+		}}
+	]
+}

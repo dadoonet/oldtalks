@@ -1,0 +1,13 @@
+{
+	"date" : "2008-12-04",
+	"theme" : "JUG2B  -  Ma petite entreprise ne connaît pas la crise",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Ma petite entreprise ne connaît pas la crise"
+		}}, { 
+		"talk" : {
+			"sujet" : "Table ronde avec les intervenants",
+			"speakers" : [ "Anita Protopappas", "Yannis Salachas", "Françoise Fagois", "Loïc Dosseur" ]
+		}}
+	]
+}

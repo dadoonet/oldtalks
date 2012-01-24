@@ -1,0 +1,14 @@
+{
+	"date" : "2008-05-21",
+	"theme" : "Soirée JCP (Java Community Process)",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Présentation du JCP",
+			"speakers" : [ "Patrick Curran" ]
+		}}, {
+		"talk" : {
+			"sujet" : "Table ronde sur l'ouverture du JCP",
+			"speakers" : [ "Patrick Curran", "Guillaume Laforge", "Cedric Thomas", "Eric Samson", "Antonio Goncalves" ]
+		}}
+	]
+}

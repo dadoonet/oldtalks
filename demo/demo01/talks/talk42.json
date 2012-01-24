@@ -1,0 +1,14 @@
+{
+	"date" : "2011-04-12",
+	"theme" : "Soirée Git",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Git en théorie",
+			"speakers" : [ "Sebastien Douche" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Git en pratique",
+			"speakers" : [ "Sebastien Douche" ]
+		}}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"date" : "2011-06-14",
+	"theme" : "Soirée Evening with Pete Muir",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "CDI",
+			"speakers" : [ "Pete Muir" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "CDI Extensions",
+			"speakers" : [ "Pete Muir" ]
+		}}
+	]
+}

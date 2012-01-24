@@ -1,0 +1,14 @@
+{
+	"date" : "2009-01-13",
+	"theme" : "Soirée Java EE 6",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Java EE 6",
+			"speakers" : [ "Antonio Goncalves" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "GlassFish V3",
+			"speakers" : [ "Alexis Moussine-Pouchkine" ]
+		}}
+	]
+}

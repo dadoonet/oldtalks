@@ -1,0 +1,10 @@
+{
+	"date" : "2009-11-12",
+	"theme" : "Soirée Atmosphere",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Atmosphere",
+			"speakers" : [ "Jean Francois Arcand" ]
+		}}
+	]
+}

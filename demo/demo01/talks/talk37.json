@@ -1,0 +1,22 @@
+{
+	"date" : "2010-11-09",
+	"theme" : "Soirée Moteurs de règles",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Les BRMS (Business Rules Management System) ou plus simplement les moteurs de règles",
+			"speakers" : [ "Emmanuel Bonnet" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Il était parfois les BRMS...",
+			"speakers" : [ "Laurent Magnin" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Enabling agile business and IT collaboration using the ILOG BRMS",
+			"speakers" : [ "Daniel Selman" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Pushing the rule engine to its limits with Drools Planner",
+			"speakers" : [ "Geoffrey De Smet" ]
+		}}
+	]
+}

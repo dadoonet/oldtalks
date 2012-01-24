@@ -1,0 +1,10 @@
+{
+	"date" : "2008-03-11",
+	"theme" : "Selenium",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Selenium",
+			"speakers" : [ "Zouheir Cadi" ]
+		}}
+	]
+}

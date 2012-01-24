@@ -1,0 +1,14 @@
+{
+	"date" : "2008-06-10",
+	"theme" : "Soirée Spring",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "TDD avec Spring et JMock",
+			"speakers" : [ "Christian Blavier", "Jean François Hélie" ]
+		}}, {
+		"talk" : {
+			"sujet" : "Les dernières nouveautés Spring 'à la source'",
+			"speakers" : [ "Julien Dubois", "Michaël Isvy" ]
+		}}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"date" : "2009-03-10",
+	"theme" : "Soirée Web",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Wicket",
+			"speakers" : [ "Nicolas Andre", "Carl Azoury" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Les technologies du web sémantique",
+			"speakers" : [ "Alexandre Bertails" ]
+		}}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"date" : "2011-10-11",
+	"theme" : "Le métier de développeur",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Le métier de développeur",
+			"speakers" : [ "Jean-Laurent De Morlhon", "Regis Medina", "Vincent Massol", "Didier Girard", "Gregory Weinbach" ]
+		}}
+	]
+}

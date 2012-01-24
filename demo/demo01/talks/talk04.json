@@ -1,0 +1,15 @@
+{
+	"date" : "2008-05-13",
+	"theme" : "Productivité des développements Java & Maven à la demande",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Productivité des développements Java",
+			"speakers" : [ "Guillaume Duquesnay" ]
+		}},{ 
+		"talk" : {
+			"sujet" : "Maven à la demande",
+			"speakers" : [ "Arnaud Héritier" ]
+		}}		
+		
+	]
+}

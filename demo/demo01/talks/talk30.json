@@ -1,0 +1,10 @@
+{
+	"date" : "2010-03-09",
+	"theme" : "Soirée Emmanuel Bernard",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Soirée Emmanuel Bernard",
+			"speakers" : [ "Emmanuel Bernard" ]
+		}}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"date" : "2008-09-09",
+	"theme" : "Soirée Groovy",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Langage dynamique Groovy pour la JVM",
+			"speakers" : [ "Guillaume Laforge" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Framework web dynamique Grails",
+			"speakers" : [ "Fabrice Robini" ]
+		}}
+	]
+}

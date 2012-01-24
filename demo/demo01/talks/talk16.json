@@ -1,0 +1,39 @@
+{
+	"date" : "2009-02-10",
+	"theme" : "Soirée Anniversaire du Paris JUG",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Annonces",
+			"speakers" : [ "John Rizzo", "Nicolas Brasseur", "Christian Frei", "Thierry Czarnyszka" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Le Paris JUG, 1 an déjà",
+			"speakers" : [ "Antonio Goncalves", "David Dewalle", "Zouheir Cadi" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Les JUGs en France",
+			"speakers" : [ "Antonio Goncalves", "David Dewalle", "Zouheir Cadi", "Christophe Jollivet", "Xavier Hanin", "Nicolas Leroux", "Stephane Epardaud", "Nicolas de Loof", "Sebastien Roul",
+				"Christophe Meyer", "JM Doudoux", "Xavier Roy", "Gaël Blondelle", "Julien Ripault", "Cédric Exbrayat" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Présentation du Framework Wicket",
+			"speakers" : [ "Tarik Filali Ansary" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Jazoon'09 - présentation de la conférence et des dernières news",
+			"speakers" : [ "Christian Frei" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Parleys",
+			"speakers" : [ "Stephan Janssen" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Présentation de Java SE 7 Dolphin",
+			"speakers" : [ "Thomas Chamas" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Comment créer un jeu vidéo en 3D en Java avec OpenGL ?",
+			"speakers" : [ "Julien Gouesse" ]
+		}}
+	]
+}

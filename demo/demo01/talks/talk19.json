@@ -1,0 +1,18 @@
+{
+	"date" : "2009-05-12",
+	"theme" : "Soirée Grid Computing",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Grid Computing (1ère Partie)",
+			"speakers" : [ "Erwan Alliaume", "Jean-Michel Bea", "Cyrille Le Clerc" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Grid Computing (suite)",
+			"speakers" : [ "Erwan Alliaume", "Jean-Michel Bea", "Cyrille Le Clerc" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "How to stop waiting for build/deploy and enjoy coding again",
+			"speakers" : [ "Jevgeni Kabanov" ]
+		}}
+	]
+}

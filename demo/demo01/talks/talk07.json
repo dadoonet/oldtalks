@@ -1,0 +1,14 @@
+{
+	"date" : "2008-06-12",
+	"theme" : "JUG2B -  Meilleurs Développeurs",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Meilleurs Développeurs",
+			"speakers" : [ "John Rizzo" ]
+		}}, {
+		"talk" : {
+			"sujet" : "Comment attirer et garder les développeurs",
+			"speakers" : [ "John Rizzo" ]
+		}}
+	]
+}

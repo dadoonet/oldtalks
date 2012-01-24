@@ -1,0 +1,26 @@
+{
+	"date" : "2011-11-08",
+	"theme" : "Petites librairies Java",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "GPars",
+			"speakers" : [ "Guillaume Laforge" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "OcpSoft PrettyTime",
+			"speakers" : [ "Guillaume Laforge" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Apache Commons Configuration",
+			"speakers" : [ "Emmanuel Bourg" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Google Guava (alias Google Collections)",
+			"speakers" : [ "Thierry Leriche-Dessirier", "Etienne Neveu" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Project lombok",
+			"speakers" : [ "Florent Ramière" ]
+		}}
+	]
+}

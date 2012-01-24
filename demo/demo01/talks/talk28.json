@@ -1,0 +1,10 @@
+{
+	"date" : "2010-01-18",
+	"theme" : "Soirée Performance",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Performance Tuning with Cheap Drink and Poor Tools",
+			"speakers" : [ "Kirk Pepperdine" ]
+		}}
+	]
+}

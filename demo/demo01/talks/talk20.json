@@ -1,0 +1,18 @@
+{
+	"date" : "2009-06-09",
+	"theme" : "Soirée Java Avancé",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Typage et généricité dans Java",
+			"speakers" : [ "Alexandre Bertails" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Les annotations",
+			"speakers" : [ "Philippe Prados" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "l'API Java Concurrent",
+			"speakers" : [ "Denis Ah-Kang" ]
+		}}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"date" : "2010-07-06",
+	"theme" : "Soirée Adam Bien",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Lightweight Killer Apps with Nothing But Vanilla Java EE 6",
+			"speakers" : [ "Adam Bien" ]
+		}}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"date" : "2008-02-12",
+	"theme" : "Qu'est-ce que le Paris JUG ?",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Qu'est-ce que le Paris JUG ?",
+			"speakers" : [ "Antonio Goncalves", "David Dewalle" ]
+		}}
+	]
+}

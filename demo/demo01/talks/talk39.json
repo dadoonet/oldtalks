@@ -1,0 +1,10 @@
+{
+	"date" : "2011-01-11",
+	"theme" : "Soirée David Gageot",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Comment j'ai mis ma suite de tests au régime en 5 minutes par jour",
+			"speakers" : [ "David Gageot" ]
+		}}
+	]
+}

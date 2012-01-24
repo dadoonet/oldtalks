@@ -1,0 +1,42 @@
+{
+	"date" : "2011-02-28",
+	"theme" : "3e anniversaire du Paris JUG",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Le télétravail",
+			"speakers" : [ "Nicole Turbé-Suetens" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "L'indépendance",
+			"speakers" : [ "Mathilde Lemée" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Réinventer l’indépendance, donner du sens au collectif",
+			"speakers" : [ "Oliver Jouan" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Office code",
+			"speakers" : [ "Catherine Gall" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "GTD",
+			"speakers" : [ "Emmanuel Bernard" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Réflexion sur le métier de développeur",
+			"speakers" : [ "Didier Girard" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Devops",
+			"speakers" : [ "Patrick Debois" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Mettre une application sur Android Market avant la fin de la soirée",
+			"speakers" : [ "Stéphane Jacquemain" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Du bancaire au Nabaztag",
+			"speakers" : [ "Julien Cheype" ]
+		}}
+	]
+}

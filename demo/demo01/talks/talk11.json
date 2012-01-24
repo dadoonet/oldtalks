@@ -1,0 +1,14 @@
+{
+	"date" : "2008-10-14",
+	"theme" : "Soirée OSGi",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Introduction à OSGI",
+			"speakers" : [ "Cyrille Le Clerc", "Nicolas Griso" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "OSGI appliqué",
+			"speakers" : [ "Cyrille Le Clerc", "Nicolas Griso" ]
+		}}
+	]
+}

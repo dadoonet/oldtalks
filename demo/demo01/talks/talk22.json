@@ -1,0 +1,14 @@
+{
+	"date" : "2009-07-07",
+	"theme" : "Soirée RIA",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Flex",
+			"speakers" : [ "François Le Droff" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "JavaFX : The Platform for Rich Internet Applications",
+			"speakers" : [ "Simon Ritter" ]
+		}}
+	]
+}

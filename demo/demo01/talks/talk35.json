@@ -1,0 +1,14 @@
+{
+	"date" : "2010-09-14",
+	"theme" : "Soirée NoSQL",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "NoSQL : des concepts à la réalité",
+			"speakers" : [ "Olivier Mallassi", "Michaël Figuière" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Building a CMS on top of NoSQL: lessons learned with HBase and friends",
+			"speakers" : [ "Steven Noels" ]
+		}}
+	]
+}

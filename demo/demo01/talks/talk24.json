@@ -1,0 +1,14 @@
+{
+	"date" : "2009-10-13",
+	"theme" : "Soirée JSF 2.0 et Servlet 3.0",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "JSF 2.0",
+			"speakers" : [ "Damien Gouyette", "François Petitit" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Servlet 3.0",
+			"speakers" : [ "Rémy Maucherat" ]
+		}}
+	]
+}

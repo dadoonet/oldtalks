@@ -1,0 +1,38 @@
+{
+	"date" : "2010-02-09",
+	"theme" : "2e Anniversaire du Paris JUG",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Keynote",
+			"speakers" : [ "Sacha Labourey" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Comment Obeo est devenu membre stratégique de la fondation Eclipse",
+			"speakers" : [ "Etienne Juliot" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "XWiki.org vs XWiki.com",
+			"speakers" : [ "Vincent Massol" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Développons en Java",
+			"speakers" : [ "Jean-Michel Doudoux" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "jCaptcha",
+			"speakers" : [ "Marc-Antoine Garrigue" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Presentation d'eXo Platform",
+			"speakers" : [ "Tugdual Grall" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "jax-doclets",
+			"speakers" : [ "Stephane Epardaud" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Play! framework",
+			"speakers" : [ "Guillaume Bort", "Nicolas Leroux" ]
+		}}
+	]
+}

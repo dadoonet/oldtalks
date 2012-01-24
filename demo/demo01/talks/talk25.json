@@ -1,0 +1,18 @@
+{
+	"date" : "2009-11-10",
+	"theme" : "Soirée Google",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Android",
+			"speakers" : [ "Gabriel Kastenbaum", "Stéphane Liétard" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Google App Engine",
+			"speakers" : [ "Marc-Antoine Garrigue", "Guillaume Laforge" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Google Wave, une prouesse technologique",
+			"speakers" : [ "Didier Girard" ]
+		}}
+	]
+}

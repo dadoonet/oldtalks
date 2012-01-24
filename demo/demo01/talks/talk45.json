@@ -1,0 +1,10 @@
+{
+	"date" : "2011-07-05",
+	"theme" : "Soirée Patrick Chanezon",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "La mode cloud, collections d'été",
+			"speakers" : [ "Patrick Chanezon" ]
+		}}
+	]
+}

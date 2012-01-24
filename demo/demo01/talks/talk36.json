@@ -1,0 +1,18 @@
+{
+	"date" : "2010-10-12",
+	"theme" : "Soirée Java et le Web",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Ruby On Rails",
+			"speakers" : [ "Christian Blavier" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "HTML 5",
+			"speakers" : [ "Cédric Beurtheret", "Alain Duval" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Play! Framework",
+			"speakers" : [ "Guillaume Bort", "Nicolas Martignole" ]
+		}}
+	]
+}

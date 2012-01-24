@@ -1,0 +1,10 @@
+{
+	"date" : "2009-06-15",
+	"theme" : "Soirée DDD",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Domain Driven Design",
+			"speakers" : [ "Eric Evans" ]
+		}}
+	]
+}

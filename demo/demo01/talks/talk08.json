@@ -1,0 +1,14 @@
+{
+	"date" : "2008-07-08",
+	"theme" : "MDA et Flex",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Pourquoi tout le monde ne fait-il pas du MDA ?",
+			"speakers" : [ "Grégory Weinbach" ]
+		}}, {
+		"talk" : {
+			"sujet" : "Rich Internet Applications with Flex and Java",
+			"speakers" : [ "James Ward" ]
+		}}
+	]
+}

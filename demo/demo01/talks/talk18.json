@@ -1,0 +1,14 @@
+{
+	"date" : "2009-04-14",
+	"theme" : "Soirée Scrum",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Scrum découverte",
+			"speakers" : [ "Eric Mignot", "Nicolas Martignole" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Scrum, c'est pas pour moi !",
+			"speakers" : [ "Guillaume Bodet" ]
+		}}
+	]
+}

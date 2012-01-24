@@ -1,0 +1,10 @@
+{
+	"date" : "2011-03-08",
+	"theme" : "Evening with Stephen Colebourne",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Evening with Stephen Colbourne",
+			"speakers" : [ "Stephen Colebourne" ]
+		}}
+	]
+}

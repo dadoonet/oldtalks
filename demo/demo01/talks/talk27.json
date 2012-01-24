@@ -1,0 +1,18 @@
+{
+	"date" : "2009-12-08",
+	"theme" : "Soirée Java EE 6 et Spring 3.0",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Java EE 6 et Spring 3.0",
+			"speakers" : [ "Michael Isvy", "Antonio Goncalves" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Standardisation: caca ou pas caca ?",
+			"speakers" : [ "Emmanuel Bernard" ]
+		}}, { 
+		"talk" : {
+			"sujet" : "Table ronde",
+			"speakers" : [ "Michael Isvy", "Antonio Goncalves", "Julien Dubois", "Alexis Moussine-Pouchkine", "Emmanuel Bernard", "François Cherpion" ]
+		}}
+	]
+}

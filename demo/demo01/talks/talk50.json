@@ -1,0 +1,10 @@
+{
+	"date" : "2012-01-10",
+	"theme" : "Soirée Devops",
+	"talks" : [ { 
+		"talk" : {
+			"sujet" : "Devops",
+			"speakers" : [ "Henri Gomez", "Carlos Sanchez" ]
+		}}
+	]
+}
