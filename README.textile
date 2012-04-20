@@ -1,6 +1,8 @@
 h1. Talks
 
-Some talks
+h2. Devoxx France 2012
+
+Slides are available on "Slideshare":http://www.slideshare.net/dadoonet/elasticsearch-devoxx-france-2012
 
 
 h1. Demos
