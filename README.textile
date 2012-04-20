@@ -5,6 +5,16 @@ Some talks
 
 h1. Demos
 
+h2. Devoxx France 2012
+
+The Devoxx France 2012 demo for Elasticsearch is available on Github : "https://github.com/dadoonet/devoxxfr_demo":https://github.com/dadoonet/devoxxfr_demo
+Feel free to fork it and make the code more fancy (my jQuery knowledge is basic) ;-)
+
+Demo is also live here : "http://www.devoxx.pilato.fr/":http://www.devoxx.pilato.fr/
+
+
+h2. Other Curl demos
+
 To launch demos, you have to download and unzip elasticsearch-0.18.7.
 If you want to use another version, you will have to modify utils/installPlugins.sh, utils/startNode.sh and utils/startNodeConf.sh
 
