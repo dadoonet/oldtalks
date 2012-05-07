@@ -12,7 +12,8 @@ h2. Devoxx France 2012
 The Devoxx France 2012 demo for Elasticsearch is available on Github : "https://github.com/dadoonet/devoxxfr_demo":https://github.com/dadoonet/devoxxfr_demo
 Feel free to fork it and make the code more fancy (my jQuery knowledge is basic) ;-)
 
-Demo is also live here : "http://www.devoxx.pilato.fr/":http://www.devoxx.pilato.fr/
+Demo is not live anymore. But, you can restore data collected during Devoxx France (more than 10k tweets) to play with. See
+the "README file":https://github.com/dadoonet/devoxxfr_demo on Github
 
 
 h2. Other Curl demos
